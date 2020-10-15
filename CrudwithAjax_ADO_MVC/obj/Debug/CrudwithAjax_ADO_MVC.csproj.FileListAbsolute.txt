@@ -69,3 +69,4 @@ C:\Users\Administrator\source\repos\CrudwithAjax_ADO_MVC\CrudwithAjax_ADO_MVC\ob
 C:\Users\Administrator\source\repos\CrudwithAjax_ADO_MVC\CrudwithAjax_ADO_MVC\obj\Debug\CrudwithAjax_ADO_MVC.csproj.CopyComplete
 C:\Users\Administrator\source\repos\CrudwithAjax_ADO_MVC\CrudwithAjax_ADO_MVC\obj\Debug\CrudwithAjax_ADO_MVC.dll
 C:\Users\Administrator\source\repos\CrudwithAjax_ADO_MVC\CrudwithAjax_ADO_MVC\obj\Debug\CrudwithAjax_ADO_MVC.pdb
+C:\Users\Administrator\source\repos\CrudwithAjax_ADO_MVC\CrudwithAjax_ADO_MVC\obj\Debug\CrudwithAjax_ADO_MVC.csprojAssemblyReference.cache
