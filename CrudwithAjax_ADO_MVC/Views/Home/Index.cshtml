@@ -2,7 +2,8 @@
 @{
     ViewBag.Title = "Index";
 }
-
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/emp.js"></script>
 <div class="container">
     <h2>Employees Record</h2>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New Employee</button><br /><br />
@@ -72,3 +73,37 @@
         </div>
     </div>
 </div>
+@*<script>
+    $(document).ready(function () {
+        LoadData();
+    })
+
+    function LoadData() {
+        $.ajax({
+            url: "/Home/empList",
+            type: "GET",
+            ContentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var row = "";
+                $.each(result, function (key, item) {
+                    row += "<tr>";
+                    row += "<td>" + item.EmployeeID + "</td>";
+                    row += "<td>" + item.Name + "</td>";
+                    row += "<td>" + item.Age + "</td>";
+                    row += "<td>" + item.State + "</td>";
+                    row += "<td>" + item.Country + "</td>";
+                    row += '<td><a href="#" onclick="return getbyID(' + item.EmployeeID + ')">Edit</a> | <a href="#" onclick="Delele(' + item.EmployeeID + ')">Delete</a></td>';
+                    row += "<tr>"
+                });
+
+                $(".tbody").html(row);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+
+        });
+
+    }
+</script>*@

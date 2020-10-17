@@ -23,9 +23,9 @@ namespace CrudwithAjax_ADO_MVC.Models
                 while (rd.Read())
                 {
                     emp.Add(new Employee {
-                            EmployeeId=(int)rd["EmployeeId"],
+                            EmployeeID=Convert.ToInt32(rd["EmployeeId"]),
                             Name=rd["Name"].ToString(),
-                            Age=(int)rd["Age"],
+                            Age=Convert.ToInt32(rd["Age"]),
                             State = rd["State"].ToString(),
                             Country=rd["Country"].ToString()
                     });
